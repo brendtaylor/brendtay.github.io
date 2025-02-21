@@ -284,12 +284,13 @@
 <script>
   document.addEventListener("DOMContentLoaded", function () {
       const buttons = document.querySelectorAll("[data-bs-toggle='collapse']");
+
       buttons.forEach(button => {
           button.addEventListener("click", function () {
               let target = document.querySelector(this.getAttribute("data-bs-target"));
               let isOpen = target.classList.contains("show");
 
-              // Close all collapsible sections
+              // Close all collapsible sections except the one being clicked
               document.querySelectorAll(".collapse").forEach(collapse => {
                   if (collapse !== target) {
                       collapse.classList.remove("show");
@@ -299,6 +300,14 @@
               // Toggle the clicked section
               if (!isOpen) {
                   target.classList.add("show");
+
+                  // Wait for the transition to complete before scrolling
+                  setTimeout(() => {
+    window.scrollTo({
+        top: target.getBoundingClientRect().top + window.scrollY - 150, // Adjust spacing
+        behavior: "smooth"
+    });
+}, 300);
               } else {
                   target.classList.remove("show");
               }
