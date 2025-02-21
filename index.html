@@ -10,6 +10,13 @@
         .hero { height: 40vh; display: flex; align-items: center; justify-content: center; text-align: center; }
         .projects .card { transition: transform 0.3s ease-in-out; }
         .projects .card:hover { transform: scale(1.05); }
+        .navbar {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000; /* Ensures it stays above other elements */
+}
+
     </style>
 </head>
 <body>
@@ -303,11 +310,11 @@
 
                   // Wait for the transition to complete before scrolling
                   setTimeout(() => {
-    window.scrollTo({
-        top: target.getBoundingClientRect().top + window.scrollY - 150, // Adjust spacing
-        behavior: "smooth"
-    });
-}, 300);
+                  window.scrollTo({
+                  top: target.getBoundingClientRect().top + window.scrollY - 220, // Adjust spacing
+                  behavior: "smooth"
+                  });
+              }, 300);
               } else {
                   target.classList.remove("show");
               }
@@ -315,3 +322,4 @@
       });
   });
 </script>
+
