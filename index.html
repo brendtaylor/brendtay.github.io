@@ -287,10 +287,6 @@
     </div>
 </section>
 
-<!-- Bootstrap JS (Ensure this is included for the collapse feature to work) -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-
-
     <!-- Job Section -->
 <section id="jobs" class="projects py-5 bg-light">
   <div class="container">
@@ -390,38 +386,4 @@
 </body>
 </html>
 
-<script>
-  document.addEventListener("DOMContentLoaded", function () {
-      const buttons = document.querySelectorAll("[data-bs-toggle='collapse']");
-
-      buttons.forEach(button => {
-          button.addEventListener("click", function () {
-              let target = document.querySelector(this.getAttribute("data-bs-target"));
-              let isOpen = target.classList.contains("show");
-
-              // Close all collapsible sections except the one being clicked
-              document.querySelectorAll(".collapse").forEach(collapse => {
-                  if (collapse !== target) {
-                      collapse.classList.remove("show");
-                  }
-              });
-
-              // Toggle the clicked section
-              if (!isOpen) {
-                  target.classList.add("show");
-
-                  // Wait for the transition to complete before scrolling
-                  setTimeout(() => {
-                  window.scrollTo({
-                  top: target.getBoundingClientRect().top + window.scrollY - 220, // Adjust spacing
-                  behavior: "smooth"
-                  });
-              }, 300);
-              } else {
-                  target.classList.remove("show");
-              }
-          });
-      });
-  });
-</script>
 
