@@ -12,6 +12,7 @@
   <meta property="og:type" content="website" />
   <meta property="og:image" content="https://your-domain/images/og-image.jpg" />
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css">
   <style>
     body { font-family: system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif; }
     .hero { min-height: 40vh; display:flex; align-items:center; justify-content:center; text-align:center; }
@@ -33,24 +34,22 @@
 </head>
 <body>
     <!-- Navbar -->
-<nav class="navbar navbar-expand-lg" style="background-color: #121212;">
+<nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #121212;">
   <div class="container">
     <a class="navbar-brand fw-bold" href="#" style="color: #00ffcc;">My Portfolio</a>
-    <button class="navbar-toggler text-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+    <button class="navbar-toggler text-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav ms-auto">
-        <li class="nav-item">
-          <a class="nav-link nav-neon" href="#About"></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link nav-neon" href="#Contact"></a>
-        </li>
+        <li class="nav-item"><a class="nav-link nav-neon" href="#about">About</a></li>
+        <li class="nav-item"><a class="nav-link nav-neon" href="#projects">Projects</a></li>
+        <li class="nav-item"><a class="nav-link nav-neon" href="#contact">Contact</a></li>
       </ul>
     </div>
   </div>
 </nav>
+
 
     <!-- Hero Section -->
    <header class="hero d-flex align-items-center">
@@ -60,7 +59,7 @@
       <div class="col-md-7 text-center text-md-start">
         <h1 class="fw-bold">Hello, I’m Brendan Taylor</h1>
         <p class="lead">IT Consultant | Researcher</p>
-        <a href="#projects" class="btn btn-outline-light mt-3">View My Work</a>
+        <a href="#projects" class="btn btn-primary mt-3">View My Work</a>
       </div>
 
       <!-- Right: Photo -->
@@ -79,302 +78,365 @@
         <p class="text-center">I am a Technical Support Specialist with a strong background in IT, software development, and hardware support. My expertise spans web development, embedded systems, and game design, with knowledge in Java, C++, Python, JavaScript, SQL, AWS, and CAD. Beyond software, I have hands-on experience in network management, data recovery, and server administration, integrating Raspberry Pi, Unraid, and Network architecture into my setups. My projects range from full-stack web applications like MI-Infrastructure to embedded systems and Unity-based game development, demonstrating my ability to tackle diverse technical challenges. Passionate about problem-solving and innovation, I continuously refine my skills in programming, database management, making me a versatile and driven technologist.</p>
     </section>
 
-    <div class="container mt-2">
-      <div class="row justify-content-center">
-          <div class="col-2">
-              <img src="images/Bootstrap_logo.svg.png" class="img-fluid" alt="Image 1">
-          </div>
-          <div class="col-2">
-              <img src="images/images.png" class="img-fluid" alt="Image 2">
-          </div>
-          <div class="col-2">
-              <img src="images/Octicons-mark-github.svg" class="img-fluid" alt="Image 3">
-          </div>
-          <div class="col-2">
-              <img src="images/Postgresql_elephant.svg.png" class="img-fluid" alt="Image 4">
-          </div>
-          <div class="col-2">
-              <img src="images/React-icon.svg.png" class="img-fluid" alt="Image 5">
-          </div>
+<section id="tools" class="py-5 bg-light">
+  <div class="container">
+    <h2 class="text-center mb-4">Tools & Technologies in Practice</h2>
+    <p class="text-center">
+      Beyond theory, I’ve applied these tools directly in my academic, professional, and personal projects. 
+      Each one has played a role in shaping my ability to design, build, and maintain real-world solutions:
+    </p>
+
+    <div class="row mt-5 g-4">
+      <!-- Bootstrap -->
+      <div class="col-md-6 d-flex align-items-start">
+        <img src="images/Bootstrap_logo.svg.png" class="img-fluid me-3" alt="Bootstrap" style="max-width:60px;">
+        <div>
+          <h5>Bootstrap</h5>
+          <p>
+            I’ve used Bootstrap to quickly prototype and style responsive websites such as my personal portfolio 
+            and project showcases. Its grid system and prebuilt components let me create clean, mobile-friendly layouts efficiently.
+          </p>
+        </div>
       </div>
+
+      <!-- JavaScript -->
+      <div class="col-md-6 d-flex align-items-start">
+        <img src="images/images.png" class="img-fluid me-3" alt="JavaScript" style="max-width:60px;">
+        <div>
+          <h5>JavaScript</h5>
+          <p>
+            JavaScript powers much of the interactivity in my projects, from form validation and dynamic UI updates 
+            to client-side logic. I’ve used it both natively and in frameworks like React to create engaging web applications.
+          </p>
+        </div>
+      </div>
+
+      <!-- GitHub -->
+      <div class="col-md-6 d-flex align-items-start">
+        <img src="images/Octicons-mark-github.svg" class="img-fluid me-3" alt="GitHub" style="max-width:60px;">
+        <div>
+          <h5>GitHub</h5>
+          <p>
+            GitHub has been central to version control and collaboration. I’ve managed code for projects like 
+            <em>MI-Infrastructure</em>, tracked issues, and coordinated with peers while maintaining clear commit histories and documentation.
+          </p>
+        </div>
+      </div>
+
+      <!-- PostgreSQL -->
+      <div class="col-md-6 d-flex align-items-start">
+        <img src="images/Postgresql_elephant.svg.png" class="img-fluid me-3" alt="PostgreSQL" style="max-width:60px;">
+        <div>
+          <h5>PostgreSQL</h5>
+          <p>
+            I’ve designed and queried relational databases in PostgreSQL, handling structured data for full-stack applications. 
+            This includes building schemas, writing SQL queries, and connecting databases to backend services for data-driven solutions.
+          </p>
+        </div>
+      </div>
+
+      <!-- React -->
+      <div class="col-md-6 d-flex align-items-start">
+        <img src="images/React-icon.svg.png" class="img-fluid me-3" alt="React" style="max-width:60px;">
+        <div>
+          <h5>React</h5>
+          <p>
+            React has been my go-to for developing modular, component-based user interfaces. 
+            I’ve built dynamic pages that update seamlessly without full reloads, including parts of my personal portfolio and experimental apps.
+          </p>
+        </div>
+      </div>
+    </div>
   </div>
+</section>
+
+
+
   
    
 
   
      <!-- Objective Section -->
-     <section id="about" class="py-5 container">
-      <h2 class="text-center">My Objective</h2>
-      <p class="text-center">I am interested in jobs related to system administration, application development, 
-        and web development, allowing me to expand my skills and education continuously. I seek a role that fosters both personal and professional growth, allowing me to leverage my expertise to benefit both myself and the company.</p>
-  </section>
+    <section id="objective" class="py-5 container">
+  <h2 class="text-center">My Objective</h2>
+  <p class="text-center">I am interested in jobs related to system administration, application development, 
+    and web development, allowing me to expand my skills and education continuously. I seek a role that fosters both personal and professional growth, allowing me to leverage my expertise to benefit both myself and the company.</p>
+</section>
+
 
   <!--Research Section-->
   <section id="research" class="research py-5 bg-light"> 
-    <div class="container text-center">
-      <h2 class="text-center mt-4">Research</h2>
-      <div class="row justify-content-center">
-      
-        <p class="mt-4">
-         At the University of Michigan–Flint, I participated in a research initiative aimed at adapting ride-on cars to better serve children with disabilities. The project was an interdisciplinary effort, bringing together engineering students, occupational therapists, and physical therapists to design modifications that addressed both functional needs and therapeutic goals.
+  <div class="container text-center">
+    <h2 class="text-center mt-4">Research</h2>
 
-        Through this collaboration, I gained experience working in large, diverse teams with different areas of expertise and perspectives. Our work emphasized not only creating tailored solutions for individual children but also developing standardized approaches that could be applied more broadly, ensuring consistency, accessibility, and long-term impact for future adaptations.
+    <div class="row justify-content-center">
+      <div class="col-lg-10">
+        <p class="mt-4">
+          At the University of Michigan–Flint, I participated in a research initiative aimed at adapting ride-on cars to better serve children with disabilities. The project was an interdisciplinary effort, bringing together engineering students, occupational therapists, and physical therapists to design modifications that addressed both functional needs and therapeutic goals.
+          <br><br>
+          Through this collaboration, I gained experience working in large, diverse teams with different areas of expertise and perspectives. Our work emphasized not only creating tailored solutions for individual children but also developing standardized approaches that could be applied more broadly, ensuring consistency, accessibility, and long-term impact for future adaptations.
         </p>
-        <div class="col-md-6 mt-4">
-          <img src="images/RedCar.jpg" class="img-fluid rounded-start w-75">
-          <img src="images/LicensePlate.jpg" class="img-fluid rounded-start w-75">
+      </div>
+    </div>
+
+    <div class="row mt-4">
+      <div class="col-md-6">
+        <img src="images/RedCar.jpg" class="img-fluid rounded w-100" alt="Adapted red ride-on car">
+      </div>
+      <div class="col-md-6">
+        <img src="images/LicensePlate.jpg" class="img-fluid rounded w-100" alt="Custom license plate close-up">
+      </div>
+    </div>
+  </div>
+</section>
+
+  
+
+ <!-- Projects -->
+<section id="projects" class="projects py-5 bg-light">
+  <div class="container">
+    <h2 class="text-center">Projects</h2>
+    <p class="text-center lead">These range from embedded systems to full-stack web apps and Unity games.</p>
+
+    <!-- Project: MI-Infrastructure -->
+    <div class="card overflow-hidden shadow-sm mt-4">
+      <div class="row g-0 align-items-stretch">
+        <!-- Left: Image gallery (sticky on lg) -->
+        <div class="col-lg-5">
+          <div class="h-100 position-relative">
+            <div class="p-3 h-100 d-flex flex-column">
+              <div class="row row-cols-2 g-3 flex-grow-1">
+                <div class="col">
+                  <img src="images/Mi-infra.png" class="img-fluid rounded-3 project-thumb" alt="MI-Infrastructure UI">
+                </div>
+                <div class="col">
+                  <img src="images/Mi-infraSignin.png" class="img-fluid rounded-3 project-thumb" alt="MI-Infrastructure Sign In">
+                </div>
+              </div>
+              <div class="mt-3 d-flex gap-2 flex-wrap">
+                <span class="badge text-bg-primary">React</span>
+                <span class="badge text-bg-secondary">Express.js</span>
+                <span class="badge text-bg-info">PostgreSQL</span>
+                <span class="badge text-bg-success">AWS</span>
+                <span class="badge text-bg-dark">GitHub</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: Content -->
+        <div class="col-lg-7">
+          <div class="card-body p-4 p-lg-5">
+            <div class="d-flex justify-content-between align-items-center flex-wrap gap-2">
+              <h3 class="mb-0">MI-Infrastructure</h3>
+              <a href="https://github.com/brendtay/ITI400-MI-infrastructure" class="btn btn-outline-dark btn-sm">
+                <img src="images/Octicons-mark-github.svg" width="18" class="me-1" alt="GitHub"> Repo
+              </a>
+            </div>
+            <p class="text-muted mt-2 mb-3">
+              Full-stack web app for reporting public-infrastructure issues; built with React + Express, map integration, auth, and an admin review flow.
+            </p>
+
+            <!-- Quick highlights (great on large screens) -->
+            <ul class="mb-4">
+              <li>React Router, component architecture, Bootstrap theming</li>
+              <li>Express API, env-managed secrets, reCAPTCHA, Axios</li>
+              <li>PostgreSQL schemas & queries for users/reports</li>
+              <li>AWS hosting (S3, domain config), image uploads & status tracking</li>
+            </ul>
+
+            <!-- Collapsible deep-dive details -->
+            <button class="btn btn-primary" data-bs-toggle="collapse" data-bs-target="#miInfraDetails" aria-expanded="false">
+              Detailed Skills & Responsibilities
+            </button>
+            <div id="miInfraDetails" class="collapse mt-3">
+              <div class="row">
+                <div class="col-md-6">
+                  <h6 class="text-uppercase text-muted">Frontend</h6>
+                  <ul>
+                    <li>Hooks-based state, form validation, error handling</li>
+                    <li>Google Maps API for location-based reports</li>
+                    <li>Responsive layout & accessibility improvements</li>
+                  </ul>
+                </div>
+                <div class="col-md-6">
+                  <h6 class="text-uppercase text-muted">Backend & Process</h6>
+                  <ul>
+                    <li>Routing/middleware design; auth endpoints</li>
+                    <li>Agile/SCRUM: sprints, stand-ups, retros</li>
+                    <li>GitHub issues, code reviews, PR hygiene</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div> <!-- /row -->
+    </div>
+    <!-- /Project card -->
+
+          <!-- Project: LED Tic Tac Toe -->
+<div class="card overflow-hidden shadow-sm mt-5">
+  <div class="row g-0 align-items-stretch">
+    <!-- Left: Image (gallery-ready if you add more later) -->
+    <div class="col-lg-5">
+      <div class="h-100 p-3">
+        <div class="row row-cols-1 g-3">
+          <div class="col">
+            <img src="images/tictactoe.jpg" class="img-fluid rounded-3 project-thumb" alt="LED Tic Tac Toe">
+          </div>
+        </div>
+        <div class="mt-3 d-flex gap-2 flex-wrap">
+          <span class="badge text-bg-primary">C</span>
+          <span class="badge text-bg-secondary">Embedded</span>
+          <span class="badge text-bg-success">Electronics</span>
+          <span class="badge text-bg-info">3D Printing</span>
+          <span class="badge text-bg-dark">GitHub</span>
         </div>
       </div>
     </div>
-  </section>
-  
 
-  <!--Project Section-->
-  <section id="projects" class="projects py-5 bg-light">
-    <div class="container">
-        <h2 class="text-center">Projects</h2>
-        <p class="text-center">These are several of the projects I have worked on in the past. These projects range from embedded systems, full-stack websites, and Unity games.</p>
-        <div class="row">
-            <!-- MI-Infrastructure Project -->
-            <div class="col-12 mt-4">
-                <div class="card">
-                    <button class="btn btn-primary w-100 text-start" data-bs-toggle="collapse" data-bs-target="#miInfra" aria-expanded="false">
-                        Mi-Infrastructure
-                    </button>
-                    <div class="card-body">
-                        <p class="mb-0">A full-stack web application for reporting infrastructure issues, built with React and Express.js.</p>
-                    </div>
-                    <div id="miInfra" class="collapse">
-                        <div class="row g-0 d-flex align-items-center">
-                            <div class="col-md-4">
-                                <img src="images/Mi-infra.png" class="img-fluid rounded-start mb-3" alt="Project 1">
-                                <img src="images/Mi-infraSignin.png" class="img-fluid rounded-start" alt="Project image 2">
-                            </div>
-                            <div class="col-md-8">
-                                <div class="card-body">
-                                    <strong class="text-center">Skills Learned</strong>
-                                    <ul>
-                                      <li><strong>Web Development</strong>
-                                          <ul>
-                                              <li>React (Component-based architecture, React Router, Bootstrap integration, state management with hooks)</li>
-                                              <li>JavaScript (UI interactions, API requests with Axios, form validation, error handling)</li>
-                                              <li>CSS (Responsive design, media queries, layout improvements, accessibility enhancements)</li>
-                                              <li>Google Maps API (Interactive map integration for location-based reporting)</li>
-                                          </ul>
-                                      </li>
-                                      <li><strong>Backend & API Development</strong>
-                                          <ul>
-                                              <li>Express.js server setup (Routing, middleware, API endpoints)</li>
-                                              <li>Managing environment variables for API keys and sensitive data</li>
-                                              <li>postgres DB (Database integration for storing reports and user data)</li>
-                                              <li>Node.js (Backend logic, API request handling)</li>
-                                              <li>reCAPTCHA (Security implementation for spam prevention)</li>
-                                          </ul>
-                                      </li>
-                                      <li><strong>Infrastructure & Hosting</strong>
-                                          <ul>
-                                              <li>AWS Hosting (Deploying frontend and backend services)</li>
-                                              <li>S3/Buckets</li>
-                                              <li>Domain Management (mi-infrastructure.com setup and maintenance)</li>
-                                          </ul>
-                                      </li>
-                                      <li><strong>Features & Functionality</strong>
-                                          <ul>
-                                              <li>Issue Reporting System (Photo upload, description, and GPS location submission)</li>
-                                              <li>User Authentication (Login system for tracking report submissions)</li>
-                                              <li>Report Status Tracking (Viewing updates on submitted issues)</li>
-                                              <li>Admin Dashboard (Managing and reviewing reports)</li>
-                                          </ul>
-                                      </li>
-                                      <li><strong>SCRUM & Agile Development</strong>
-                                        <ul>
-                                            <li>Working within an Agile SCRUM framework</li>
-                                            <li>Conducting sprint planning, daily stand-ups, and sprint retrospectives</li>
-                                            <li>Using task tracking tools like Trello/Jira for backlog management</li>
-                                            <li>Breaking down project tasks into user stories and deliverable increments</li>
-                                        </ul>
-                                    </li>
-                                    <li><strong>Collaboration & Teamwork</strong>
-                                        <ul>
-                                            <li>Working in a multidisciplinary team of developers, designers, and researchers</li>
-                                            <li>Effective communication and problem-solving within a team environment</li>
-                                            <li>Version control and collaboration using Git and GitHub</li>
-                                            <li>Peer code reviews to improve quality and maintainability</li>
-                                        </ul>
-                                    </li>
-                                  </ul>
-                                  <p class="text-center">
-                                    <a href="https://github.com/brendtay/ITI400-MI-infrastructure">
-                                      <img src="images/Octicons-mark-github.svg" alt = "clickable image" width="100" >
-                                    </a>
-                                  </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- LED Tic Tac Toe Project -->
-            <div class="col-12 mt-5">
-                <div class="card">
-                    <button class="btn btn-primary w-100 text-start" data-bs-toggle="collapse" data-bs-target="#ledTicTacToe" aria-expanded="false">
-                        LED Tic Tac Toe
-                    </button>
-                    <div class="card-body">
-                        <p class="mb-0">An embedded system project implementing Tic Tac Toe using LEDs and C programming.</p>
-                    </div>
-                    <div id="ledTicTacToe" class="collapse">
-                        <div class="row g-0 d-flex align-items-center">
-                            <div class="col-md-4">
-                                <img src="images/tictactoe.jpg" class="img-fluid rounded-start" alt="Project 2">
-                            </div>
-                            <div class="col-md-8">
-                                <div class="card-body">
-                                    <strong class="text-center">Skills Learned</strong>
-                                    <ul>
-                                      <li><strong>Embedded Systems & Low-Level Programming</strong>
-                                          <ul>
-                                              <li><strong>C Programming</strong>
-                                                  <ul>
-                                                      <li>Memory management (Efficient use of RAM, dynamic allocation, stack/heap optimization)</li>
-                                                      <li>Pointers and low-level data manipulation for hardware control</li>
-                                                      <li>Efficient logic design for game mechanics and real-time input handling</li>
-                                                  </ul>
-                                              </li>
-                                              <li><strong>Hardware-Software Interaction</strong>
-                                                  <ul>
-                                                      <li>Directly controlling system hardware using embedded C</li>
-                                                      <li>Polling and interrupt-driven programming for responsive input handling</li>
-                                                      <li>Integration of sensors, buttons, and display modules for game interaction</li>
-                                                  </ul>
-                                              </li>
-                                              <li><strong>Game Development for Embedded Systems</strong>
-                                                  <ul>
-                                                      <li>Designed and built a fully functional <strong>two-player game</strong> on an embedded system</li>
-                                                      <li>Implemented real-time player input processing with minimal latency</li>
-                                                      <li>Developed a game loop with state management for smooth gameplay</li>
-                                                      <li>Custom algorithm design for game logic, collision detection, and scoring</li>
-                                                  </ul>
-                                              </li>
-                                              <li><strong>3D Printing & CAD</strong>
-                                                  <ul>
-                                                      <li>Designed and prototyped a custom housing for leds using CAD software</li>
-                                                      <li>3D printed the housing for the leds, ensuring high quality</li>
-                                                      <li>Iterated on multiple prototypes to refine fit and usability</li>
-                                                  </ul>
-                                              </li>
-                                              <li><strong>Electronics & Assembly</strong>
-                                                  <ul>
-                                                      <li>Soldering and assembling custom PCB components</li>
-                                                      <li>Wiring and circuit integration for buttons, LEDs, and display modules</li>
-                                                      <li>Power management and voltage regulation for stable system performance</li>
-                                                  </ul>
-                                              </li>
-                                              <li><strong>Teamwork & Collaboration</strong>
-                                                  <ul>
-                                                      <li>Worked in a team to design and build a functional embedded game system</li>
-                                                      <li>Collaborated on hardware design, coding, and testing for seamless integration</li>
-                                                      <li>Utilized version control (Git/GitHub) for code management and debugging</li>
-                                                      <li>Participated in structured problem-solving and iterative prototyping</li>
-                                                  </ul>
-                                              </li>
-                                          </ul>
-                                      </li>
-                                  </ul>                               
-                                    <p class="text-center">
-                                      <a href="https://github.com/brendtay/ITI220_Final">
-                                        <img src="images/Octicons-mark-github.svg" alt = "clickable image" width="100" >
-                                      </a>
-                                  </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Game Jam Project -->
-            <div class="col-12 mt-5">
-                <div class="card">
-                    <button class="btn btn-primary w-100 text-start" data-bs-toggle="collapse" data-bs-target="#gameJam" aria-expanded="false">
-                        Game Jam
-                    </button>
-                    <div class="card-body">
-                        <p class="mb-0">A Unity-based game created for a Game Jam, featuring C# scripting and enemy AI.</p>
-                    </div>
-                    <div id="gameJam" class="collapse">
-                        <div class="row g-0 d-flex align-items-center">
-                            <div class="col-md-4">
-                                <img src="images/GameJam.png" class="img-fluid rounded-start" alt="Project 3">
-                            </div>
-                            <div class="col-md-8">
-                                <div class="card-body">
-                                    <strong class="text-center">Skills Learned</strong>
-                                    <ul>
-                                      <li><strong>Game Development</strong>
-                                          <ul>
-                                              <li><strong>Unity Engine</strong> 
-                                                  <ul>
-                                                      <li>GameObject management (Instantiating, pooling, and destroying objects)</li>
-                                                      <li>Scene transitions and loading optimization</li>
-                                                      <li>UI design (Menus, HUD, pause screens, and interactive elements)</li>
-                                                      <li>Physics-based interactions (Rigidbodies, colliders, forces, and gravity)</li>
-                                                      <li>Animation system (Animator Controller, state transitions, blend trees)</li>
-                                                      <li>Particle effects (VFX for environment and character interactions)</li>
-                                                  </ul>
-                                              </li>
-                                              <li><strong>C# Scripting</strong> 
-                                                  <ul>
-                                                      <li>Player movement (Smooth controls, jumping, dashing, animations)</li>
-                                                      <li>Enemy AI (State-based behavior, pathfinding, attack patterns)</li>
-                                                      <li>Combat mechanics (Melee/ranged attacks, damage detection, health systems)</li>
-                                                      <li>Game logic (Power-ups, collectibles, scoring system, win/loss conditions)</li>
-                                                      <li>Object pooling for performance optimization</li>
-                                                      <li>Event-driven programming (Delegates, UnityEvents, and event listeners)</li>
-                                                  </ul>
-                                              </li>
-                                              <li><strong>Additional Features</strong>
-                                                  <ul>
-                                                      <li>Sound and music integration (3D spatial audio, dynamic sound effects)</li>
-                                                      <li>Gamepad and keyboard input handling</li>
-                                                      <li>Pause menu with functional UI that runs while the game is paused</li>
-                                                      <li>Dialogue system for in-game tutorials and storytelling</li>
-                                                      <li>Level design (Prototyping, balancing difficulty, player guidance)</li>
-                                                      <li>Game optimization (Reducing draw calls, LODs, script efficiency)</li>
-                                                  </ul>
-                                              </li>
-                                              
-                                          </ul>
-                                      </li>
-                                  </ul>
-                                  <div class="container mt-4">
-                                    <div class="d-flex justify-content-center">
-                                        <div class="col-2">
-                                            <a href="https://github.com/brendtaylor/CIS355_GameJam"> 
-                                              <img src="images/Octicons-mark-github.svg" class ="img-fluid" alt="Image 1">
-                                            </a>
-                                           
-                                        </div>
-                                        <div class="col-2">
-                                            <a href="https://brendtay.itch.io/fight-for-the-castle">
-                                              <img src="images/itch-io.svg" class="img-fluid" alt="Image 2">
-                                            </a>
-                                            
-                                        </div>
-                                        
-                                    </div>
-                                </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
+    <!-- Right: Content -->
+    <div class="col-lg-7">
+      <div class="card-body p-4 p-lg-5">
+        <div class="d-flex justify-content-between align-items-center flex-wrap gap-2">
+          <h3 class="mb-0">LED Tic Tac Toe</h3>
+          <a href="https://github.com/brendtay/ITI220_Final" class="btn btn-outline-dark btn-sm">
+            <img src="images/Octicons-mark-github.svg" width="18" class="me-1" alt="GitHub"> Repo
+          </a>
         </div>
+        <p class="text-muted mt-2 mb-3">
+          An embedded Tic Tac Toe game implemented in C with direct hardware control for LEDs, buttons, and game logic.
+        </p>
+
+        <ul class="mb-4">
+          <li>Low-level C for input scanning, debouncing, and LED output</li>
+          <li>Game loop, state management, and efficient memory use</li>
+          <li>Custom 3D-printed LED housing; iterative CAD prototyping</li>
+          <li>Soldering, wiring, and stable power/circuit design</li>
+        </ul>
+
+        <button class="btn btn-primary" data-bs-toggle="collapse" data-bs-target="#ledTicTacToeDetails" aria-expanded="false">
+          Detailed Skills & Responsibilities
+        </button>
+        <div id="ledTicTacToeDetails" class="collapse mt-3">
+          <div class="row">
+            <div class="col-md-6">
+              <h6 class="text-uppercase text-muted">Embedded & Electronics</h6>
+              <ul>
+                <li>Polling & interrupt strategies for responsive inputs</li>
+                <li>Pointer-based data manipulation for hardware registers</li>
+                <li>Voltage regulation & power delivery considerations</li>
+              </ul>
+            </div>
+            <div class="col-md-6">
+              <h6 class="text-uppercase text-muted">Build & Collaboration</h6>
+              <ul>
+                <li>3D design for enclosure fit and LED diffusion</li>
+                <li>Version control with Git/GitHub</li>
+                <li>Team prototyping & structured testing cycles</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+      </div>
     </div>
-</section>
+  </div>
+</div>
+
+      <!-- Project: Game Jam -->
+<div class="card overflow-hidden shadow-sm mt-5">
+  <div class="row g-0 align-items-stretch">
+    <!-- Left: Image (gallery-ready if you add more later) -->
+    <div class="col-lg-5">
+      <div class="h-100 p-3">
+        <div class="row row-cols-1 g-3">
+          <div class="col">
+            <img src="images/GameJam.png" class="img-fluid rounded-3 project-thumb" alt="Game Jam">
+          </div>
+        </div>
+        <div class="mt-3 d-flex gap-2 flex-wrap">
+          <span class="badge text-bg-primary">Unity</span>
+          <span class="badge text-bg-secondary">C#</span>
+          <span class="badge text-bg-success">AI</span>
+          <span class="badge text-bg-info">VFX</span>
+          <span class="badge text-bg-dark">GitHub</span>
+          <span class="badge text-bg-warning text-dark">itch.io</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Right: Content -->
+    <div class="col-lg-7">
+      <div class="card-body p-4 p-lg-5">
+        <div class="d-flex justify-content-between align-items-center flex-wrap gap-2">
+          <h3 class="mb-0">Game Jam</h3>
+          <div class="d-flex gap-2">
+            <a href="https://github.com/brendtaylor/CIS355_GameJam" class="btn btn-outline-dark btn-sm">
+              <img src="images/Octicons-mark-github.svg" width="18" class="me-1" alt="GitHub"> Repo
+            </a>
+            <a href="https://brendtay.itch.io/fight-for-the-castle" class="btn btn-outline-primary btn-sm">
+              <img src="images/itch-io.svg" width="18" class="me-1" alt="itch.io"> Play
+            </a>
+          </div>
+        </div>
+        <p class="text-muted mt-2 mb-3">
+          A Unity action game built for a timed jam, featuring C# gameplay systems, enemy AI, UI, audio, and polished moment-to-moment feel.
+        </p>
+
+        <ul class="mb-4">
+          <li>State-driven enemy AI, object pooling, and combat systems</li>
+          <li>UI/HUD, menus, pause flow; animation controllers & transitions</li>
+          <li>Physics interactions, particle effects, and 3D spatial audio</li>
+          <li>Level design, difficulty tuning, and performance optimization</li>
+        </ul>
+
+        <button class="btn btn-primary" data-bs-toggle="collapse" data-bs-target="#gameJamDetails" aria-expanded="false">
+          Detailed Skills & Responsibilities
+        </button>
+        <div id="gameJamDetails" class="collapse mt-3">
+          <div class="row">
+            <div class="col-md-6">
+              <h6 class="text-uppercase text-muted">Engineering</h6>
+              <ul>
+                <li>C# event-driven systems (delegates, UnityEvents)</li>
+                <li>Scene management and async loading</li>
+                <li>Performance: reduced draw calls & GC pressure</li>
+              </ul>
+            </div>
+            <div class="col-md-6">
+              <h6 class="text-uppercase text-muted">Gameplay & UX</h6>
+              <ul>
+                <li>Responsive inputs (gamepad & keyboard)</li>
+                <li>VFX/audio feedback for player actions</li>
+                <li>Tutorial dialogue & onboarding flow</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+<style>
+  /* Make gallery thumbnails consistent and elegant on large screens */
+  .project-thumb {
+    width: 100%;
+    height: 180px;          /* tweak to your taste: 160–220px works well */
+    object-fit: cover;      /* fills the box without distortion */
+    object-position: center;
+  }
+
+  /* Optional: larger, more dramatic images on very large screens */
+  @media (min-width: 1400px) {
+    .project-thumb { height: 220px; }
+  }
+</style>
+
 
     <!-- Job Section -->
 <section id="jobs" class="projects py-5 bg-light">
@@ -491,14 +553,14 @@
 
     <!-- Contact Section -->
     <section id="contact" class="py-5 container">
-        <h2 class="text-center">Contact Me</h2>
-        <p class="text-center"><a>Email: brendan@brendantaylor.net</a> | <a>LinkedIn: linkedin.com/in/brendantay</a> | <a>Github: https://github.com/brendantay</a></p>
-    </section>
+  <h2 class="text-center">Contact Me</h2>
+  <p class="text-center">
+    <a href="mailto:brendan@brendantaylor.net">Email: brendan@brendantaylor.net</a> |
+    <a href="https://www.linkedin.com/in/brendtay" target="_blank" rel="noopener">LinkedIn: linkedin.com/in/brendtay</a> |
+    <a href="https://github.com/brendtay" target="_blank" rel="noopener">GitHub: github.com/brendtay</a>
+  </p>
+</section>
 
-    <!-- Footer -->
-    <footer class="bg-dark text-white text-center py-3">
-        <p>&copy; 2025 Brendan Taylor. All Rights Reserved.</p>
-    </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
