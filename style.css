@@ -32,3 +32,12 @@
   100% { background-position: 0% 50%; }
 }
 
+/* Put in style.css or your <style> block */
+:root { --card-max: 1100px; } /* pick your favorite width: 960–1200px works well */
+
+#projects .card,
+#jobs .card {
+  max-width: var(--card-max);
+  margin-left: auto;
+  margin-right: auto;
+}
