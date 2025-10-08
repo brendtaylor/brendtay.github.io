@@ -229,13 +229,13 @@
     </div>
 
     <div class="row mt-4">
-  <div class="col-md-6">
-    <img src="images/RedCar.jpg" class="img-fluid rounded w-75 mx-auto d-block" alt="Adapted red ride-on car">
-  </div>
-  <div class="col-md-6">
-    <img src="images/LicensePlate.jpg" class="img-fluid rounded w-75 mx-auto d-block" alt="Custom license plate close-up">
-  </div>
-</div>
+      <div class="col-md-6">
+        <img src="images/RedCar.jpg" class="img-fluid rounded mx-auto d-block research-image" alt="Adapted red ride-on car">
+      </div>
+      <div class="col-md-6">
+        <img src="images/LicensePlate.jpg" class="img-fluid rounded mx-auto d-block research-image" alt="Custom license plate close-up">
+      </div>
+    </div>
 
   </div>
 </section>
@@ -247,6 +247,69 @@
   <div class="container">
     <h2 class="text-center">Projects</h2>
     <p class="text-center lead">These range from embedded systems to full-stack web apps and Unity games.</p>
+
+    <!-- Project: Skynet - Homelab -->
+    <div class="card overflow-hidden shadow-sm mt-4">
+      <div class="row g-0 align-items-stretch">
+        <!-- Left: Accent panel -->
+        <div class="col-lg-4 bg-dark text-white d-flex align-items-center justify-content-center p-4">
+          <div class="text-center">
+            <h3 class="fw-bold mb-1">Skynet – Homelab</h3>
+            <p class="mb-0">Sep 2024 – Present</p>
+            <p class="mb-0">Self-Hosted Infrastructure</p>
+          </div>
+        </div>
+
+        <!-- Right: Content -->
+        <div class="col-lg-8">
+          <div class="card-body p-4 p-lg-5">
+            <p class="text-muted">Homelab Infrastructure</p>
+            <p>
+              Designed and maintained a self-hosted homelab using Unraid, Docker, and OPNsense to gain hands-on experience in IT
+              infrastructure, networking, and DevOps.
+            </p>
+
+            <ul class="mb-4">
+              <li>Implemented applications including Jellyfin, Nextcloud, Radarr/Sonarr, and automation services.</li>
+              <li>Configured OPNsense firewall with VPN, VLAN segmentation, and DNS-over-TLS for secure networking.</li>
+              <li>Implemented remote access via Cloudflare Tunnels and Nginx Proxy Manager using Zero-Trust practices.</li>
+              <li>Set up a LAN network with switches, UniFi access points, and a Docker-hosted UniFi controller.</li>
+              <li>Optimized server hardware for energy efficiency, media transcoding (AV1), and future AI workloads.</li>
+            </ul>
+
+            <button class="btn btn-primary" data-bs-toggle="collapse" data-bs-target="#skynetHomelabDetails" aria-expanded="false">
+              Detailed Skills & Responsibilities
+            </button>
+            <div id="skynetHomelabDetails" class="collapse mt-3">
+              <div class="row">
+                <div class="col-md-6">
+                  <h6 class="text-uppercase text-muted">Infrastructure & Networking</h6>
+                  <ul>
+                    <li>Segmented services across VLANs with firewall policies and traffic shaping.</li>
+                    <li>Container orchestration with Docker Compose and automated backups on Unraid.</li>
+                    <li>High-availability planning with UPS monitoring and hardware health dashboards.</li>
+                  </ul>
+                </div>
+                <div class="col-md-6">
+                  <h6 class="text-uppercase text-muted">Security & Automation</h6>
+                  <ul>
+                    <li>Zero Trust remote access via Cloudflare Tunnels, SSO rules, and device posture checks.</li>
+                    <li>Automated SSL certificate management and DNS records through API workflows.</li>
+                    <li>Scheduled maintenance scripts for updates, container health checks, and alerting.</li>
+                  </ul>
+                </div>
+              </div>
+              <p class="mb-1">
+                <strong>Outcomes:</strong> Demonstrates practical skills in network engineering, cybersecurity, virtualization, and automation.
+              </p>
+              <p class="mb-0">
+                <em>Serves as an enterprise-grade lab environment for continuous learning and skill development.</em>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <!-- Project: MI-Infrastructure -->
     <div class="card overflow-hidden shadow-sm mt-4">
